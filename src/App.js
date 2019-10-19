@@ -1,5 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+import Logo from './Logo';
+import Navigation from './components/Navigation';
+import UserProfile from './components/UserProfile';
+import Hero from './components/Hero';
+import TitleList from './components/titleList/TitleList';
 import './App.css';
 
 class App extends React.Component{
