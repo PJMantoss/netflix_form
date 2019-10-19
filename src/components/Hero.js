@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import HeroButton from './HeroButton';
 
 export default function Hero() {
     return (
