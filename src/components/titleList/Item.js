@@ -13,3 +13,5 @@ export default function Item() {
         </div>
     )
 }
+
+export default Item;
