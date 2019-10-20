@@ -21,7 +21,10 @@ class App extends React.Component{
 
   handleKeyUp(e){
     if (e.key === 'Enter' && this.state.searchTerm !== ''){
-      let searchUrl = "search/multi?query" + '&api_key=' + this.apiKey;
+      const searchUrl = "search/multi?query=" + this.state.searchTerm + '&api_key=' + this.apiKey;
+      this.setState({
+        searchUrl: searchUrl
+      })
     }
   }
 
