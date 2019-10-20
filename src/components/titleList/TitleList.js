@@ -22,7 +22,7 @@ export class TitleList extends Component {
             this.setState({
                 data: data
             })
-        }).catch((err) => {
+        }).catch((error) => {
             console.log('There has been an error');
         });
     }
@@ -80,7 +80,7 @@ export class TitleList extends Component {
         return (
             <div ref="titlecategory" className="TitleList" data-loaded={this.state.mounted}>
                <div className="Title">
-                   <h2>{this.props.title}</h2>
+                   <h1>{this.props.title}</h1>
                    <div className="titles-wrapper">
                        {titles}
                    </div>
@@ -90,4 +90,4 @@ export class TitleList extends Component {
     }
 }
 
-export default TitleList
+export default TitleList;
