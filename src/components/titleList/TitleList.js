@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Item from './Item';
 
 export class TitleList extends Component {
+    apiKey: '6a711b2f9574da2458063937e061f1c3';
+
     constructor(props){
         super(props)
         this.state = {
             data: [],
-            mounted: false,
-            apiKey: '6a711b2f9574da2458063937e061f1c3'
+            mounted: false
         }
 
         this.loadContent = this.loadContent.bind(this);

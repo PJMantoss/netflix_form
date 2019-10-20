@@ -7,10 +7,11 @@ import TitleList from './components/titleList/TitleList';
 import './App.css';
 
 class App extends React.Component{
+  apiKey: '6a711b2f9574da2458063937e061f1c3';
+
   constructor(props){
     super(props)
     this.state = {
-      apiKey: '6a711b2f9574da2458063937e061f1c3',
       searchTerm: "",
       searchUrl: ""
     }
