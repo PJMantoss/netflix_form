@@ -12,7 +12,7 @@ export default function Hero() {
 
                 <div className="button-wrapper">
                     <HeroButton primary={true} text="Watch Now" />
-                    <HeroButton primary={false} text="+ My list" />
+                    <HeroButton primary={false} text=" + My list" />
                 </div>
 
             </div>
