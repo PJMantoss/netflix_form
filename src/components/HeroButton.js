@@ -1,11 +1,20 @@
 import React from 'react'
 
-export default function HeroButton() {
-    return (
-        <a href="#" className="button" data-primary={this.props.primary}>
-            {this.props.text}
-        </a>
-    )
-}
+export default class HeroButton extends React.Component {
+    constructor(){
+        super()
+        this.state = {
+            primary: "",
+            text: ""
+        }
+    }
 
-export default HeroButton;
+    render(){
+        return (
+            <a href="#" className="Button" data-primary={this.props.primary}>
+                {this.props.text}
+            </a>
+        )
+    }
+    
+}

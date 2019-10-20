@@ -1,7 +1,7 @@
 import React from 'react'
 import ListToggle from './ListToggle';
 
-export default function Item() {
+export default function Item(props) {
     return (
         <div className="Item" style={{backgroundImage: "url(' + this.props.backdrop + ')"}}>
             <div className="overlay">
@@ -13,5 +13,3 @@ export default function Item() {
         </div>
     )
 }
-
-export default Item;

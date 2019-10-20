@@ -40,14 +40,14 @@ export class TitleList extends Component {
     componentDidMount(){
         if (this.props.url !== ''){
             this.loadContent();
-            tis.setState({
+            this.setState({
                 mounted: true
             })
         }
     }
 
     render() {
-        const titles = '';
+        let titles = '';
         if (this.state.data.results){
             titles = this.state.data.results.map((title, i) => {
                 if (i<5) {
@@ -79,7 +79,7 @@ export class TitleList extends Component {
         return (
             <div ref="titlecategory" className="TitleList" data-loaded={this.state.mounted}>
                <div className="Title">
-                   <h1>{this.props.title}</h1>
+                   <h2>{this.props.title}</h2>
                    <div className="titles-wrapper">
                        {titles}
                    </div>
