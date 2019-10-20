@@ -31,13 +31,13 @@ class App extends React.Component{
 
   handleChange(e){
     this.setState({
-      searchTerm : e.target.value
+      searchTerm: e.target.value
     })
   }
 
   render() {
     return (
-      <div className="App">
+      <div>
         <header className="Header">
           <Logo />
           <Navigation />
