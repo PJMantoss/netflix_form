@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Item from './Item';
 
 export class TitleList extends Component {
-    apiKey: '6a711b2f9574da2458063937e061f1c3';
+    // apiKey = ;
 
     constructor(props){
         super(props)
@@ -16,7 +16,7 @@ export class TitleList extends Component {
 
     loadContent(){
 
-        fetch('https://api.themoviedb.org/3/' + this.props.url + '&api_key=' + this.apiKey)
+        fetch('https://api.themoviedb.org/3/' + this.props.url + '&api_key=6a711b2f9574da2458063937e061f1c3')
         .then((response) => response.json())
         .then((data) => {
             this.setState({

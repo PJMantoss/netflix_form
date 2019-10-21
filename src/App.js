@@ -7,7 +7,7 @@ import TitleList from './components/titleList/TitleList';
 import './App.css';
 
 class App extends React.Component{
-  apiKey: '6a711b2f9574da2458063937e061f1c3';
+  // apiKey = ;
 
   constructor(props){
     super(props)
@@ -22,7 +22,7 @@ class App extends React.Component{
 
   handleKeyUp(e){
     if (e.key === 'Enter' && this.state.searchTerm !== ''){
-      const searchUrl = "search/multi?query=" + this.state.searchTerm + '&api_key=' + this.apiKey;
+      const searchUrl = "search/multi?query=" + this.state.searchTerm + '&api_key=6a711b2f9574da2458063937e061f1c3';
       this.setState({
         searchUrl: searchUrl
       })
