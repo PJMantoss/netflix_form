@@ -349,7 +349,6 @@ p {
 .Item {
   width: calc(20% - 10px);
   min-width: calc(20% - 10px);
-  background-color: #000000;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -379,7 +378,7 @@ p {
   position: relative;
   height: 100%;
   pointer-events: none;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity .125s ease;
   transition: opacity .125s ease;
 }
@@ -490,27 +489,4 @@ p {
   justify-content: center;
   height: 32px;
   width: 32px;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
 }
