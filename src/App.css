@@ -31,7 +31,8 @@ time, mark, audio, video {
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body {
@@ -109,6 +110,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   height: 37px;
   -webkit-box-align: center;
   -webkit-align-items: center;

@@ -6,10 +6,9 @@ export class ListToggle extends Component {
         this.state = {
             toggled: false
         }
-        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(){
+    handleClick = () => {
         if (this.state.toggled === true){
             this.setState({
                 toggled: false

@@ -10,11 +10,9 @@ export class TitleList extends Component {
             data: [],
             mounted: false
         }
-
-        this.loadContent = this.loadContent.bind(this);
     }
 
-    loadContent(){
+    loadContent = () => {
 
         fetch('https://api.themoviedb.org/3/' + this.props.url + '&api_key=6a711b2f9574da2458063937e061f1c3')
         .then((response) => response.json())
@@ -27,7 +25,7 @@ export class TitleList extends Component {
         });
     }
 
-    getDerivedStateFromProps(nextProps){
+    getDerivedStateFromProps = (nextProps) => {
         if (nextProps.url !== this.props.url && nextProps.url !== ''){
             this.setState({
                 mounted: true,
@@ -38,7 +36,7 @@ export class TitleList extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount = () => {
         if (this.props.url !== ''){
             this.loadContent();
             this.setState({
