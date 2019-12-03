@@ -15,12 +15,9 @@ class App extends React.Component{
       searchTerm: "",
       searchUrl: ""
     }
-
-    this.handleKeyUp = this.handleKeyUp.bind(this);
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleKeyUp(e){
+  handleKeyUp = e => {
     if (e.key === 'Enter' && this.state.searchTerm !== ''){
       const searchUrl = "search/multi?query=" + this.state.searchTerm + '&api_key=6a711b2f9574da2458063937e061f1c3';
       this.setState({
@@ -29,7 +26,7 @@ class App extends React.Component{
     }
   }
 
-  handleChange(e){
+  handleChange = e => {
     this.setState({
       searchTerm: e.target.value
     })
