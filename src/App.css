@@ -105,16 +105,6 @@ p {
   fill: #ffffff !important;
 }
 
-.Hero {
-  background-image: url(https://images.alphacoders.com/633/633643.jpg);
-}
-
-@media only screen and (max-width: 450px){
-  .Hero {
-    background-image: url(./components/narcos.jpg);
-  }
-}
-
 .Navigation ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -240,6 +230,7 @@ p {
   position: relative;
   background-size: cover;
   min-height: 800px;
+  background-image: url(https://images.alphacoders.com/633/633643.jpg);
 }
 
 .Hero .content {
@@ -287,6 +278,14 @@ p {
   width: 100%;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 450px){
+  .Hero .overlay {
+    background-image: url(./components/narcos.jpg);
+    background-position: center;
+    background-size: content;
+  }
 }
 
 .Button {
