@@ -3,7 +3,7 @@ import HeroButton from './HeroButton';
 
 export default function Hero() {
     return (
-        <div id="hero" className="Hero" style={{backgroundImage: "url(https://images.alphacoders.com/633/633643.jpg)"}}>
+        <div id="hero" className="Hero">
             <div className="content">
 
                 <img className="logo" src="https://www.returndates.com/backgrounds/narcos.logo.png" alt="narcos background" />

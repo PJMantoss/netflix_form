@@ -105,6 +105,16 @@ p {
   fill: #ffffff !important;
 }
 
+.Hero {
+  background-image: url(https://images.alphacoders.com/633/633643.jpg);
+}
+
+@media only screen and (max-width: 450px){
+  .Hero {
+    background-image: url(./components/narcos.jpg);
+  }
+}
+
 .Navigation ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -321,6 +331,11 @@ p {
 }
 
 .TitleList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: flex-start;
   padding: 20px 40px;
   box-sizing: border-box;
   -webkit-transition: opacity 3s ease;
