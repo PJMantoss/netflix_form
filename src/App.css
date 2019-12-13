@@ -286,7 +286,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    image-orientation: 180deg;
+    transform: rotate(180deg);
+    /* image-orientation: 180deg; /*
     /* image-orientation: from-image; */
   }
 }
