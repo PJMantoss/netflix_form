@@ -282,9 +282,10 @@ p {
 
 @media only screen and (max-width: 450px){
   .Hero .overlay {
-    background-image: url(./components/narcos.jpg);
+    background-image: url(narcos.jpg);
     background-position: center;
-    background-size: content;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
