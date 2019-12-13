@@ -360,6 +360,11 @@ p {
   justify-content: space-between;
 }
 
+.TitleList .Title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .TitleList[data-loaded='true'] {
   opacity: 1;
 }
